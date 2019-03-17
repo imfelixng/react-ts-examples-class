@@ -7,10 +7,10 @@ const basePath = __dirname;
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
   entry: {
-    app: './index.ts',
+    app: './index.tsx',
     vendorStyles: [
       '../node_modules/bootstrap/dist/css/bootstrap.css',
     ],
@@ -22,7 +22,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'awesome-typescript-loader',
         options: {
