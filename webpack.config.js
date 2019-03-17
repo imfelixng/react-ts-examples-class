@@ -11,6 +11,11 @@ module.exports = {
   },
   entry: {
     app: './index.tsx',
+    appStyles: './css/site.css',
+    vendor: [
+      'react',
+      'react-dom'
+    ],
     vendorStyles: [
       '../node_modules/bootstrap/dist/css/bootstrap.css',
     ],
