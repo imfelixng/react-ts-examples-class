@@ -3,7 +3,7 @@ import * as React from 'react';
 export const About: React.FC<{}> = () => {
   return (
     <div className="row about-page top-buffer">
-      <h1 className="jumbotron">02 Components</h1>
+      <h1 className="jumbotron">03 Components</h1>
       <div className="col-xs-12">
         <h1>
           <small>
